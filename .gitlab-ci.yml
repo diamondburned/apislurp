@@ -1,0 +1,35 @@
+{
+    "image": "golang:alpine",
+    "variables": {
+        "GO111MODULE": "on",
+        "COV": "/tmp/cov_results",
+    },
+    "before_script": [
+        "apk add git"
+    ],
+    "stages": [
+        "build",
+        "test"
+    ],
+    "build_test": {
+        "stage": "build",
+        "script": [
+            "go build ./..."
+        ]
+    },
+    "unit_test": {
+        "stage": "test",
+        "timeout": "2m",
+        "script": [
+            "go test ./..."
+        ]
+    },
+    "coverage_test": {
+        "stage": "test",
+        "timeout": "2m",
+        "script": [
+            "go test -coverpkg=github.com/diamondburned/apislurp -coverprofile=$COV ./...",
+            "go tool cover -func $COV"
+        ]
+    }
+}
