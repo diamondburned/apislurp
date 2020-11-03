@@ -21,13 +21,14 @@
         "stage": "test",
         "timeout": "2m",
         "script": [
-            "go test ./..."
+            "go test -nodiscordtests  ./..."
         ]
     },
     "coverage_test": {
         "stage": "test",
         "timeout": "2m",
         "script": [
+            "git submodule update --init",
             "go test -coverpkg=github.com/diamondburned/apislurp -coverprofile=$COV ./...",
             "go tool cover -func $COV"
         ]

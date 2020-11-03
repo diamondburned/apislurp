@@ -1,3 +1,5 @@
+// +build !discordtests
+
 package apislurp_test
 
 import (

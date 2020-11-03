@@ -60,6 +60,7 @@ func generateTest(markdownDir, markdownFile string) {
 	log.Println("Writing to", fileName)
 
 	j := jen.NewFile("apislurp_test")
+	j.HeaderComment("// +build !nodiscordtests")
 	j.ImportName("path/filepath", "filepath")
 
 	for name, path := range quals {

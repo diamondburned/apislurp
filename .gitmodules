@@ -1,3 +1,1 @@
-[submodule "internal/testdata/discord-api-docs"]
-	path = internal/testdata/discord-api-docs
-	url = https://github.com/discord/discord-api-docs.git
+
