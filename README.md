@@ -1,10 +1,10 @@
 # apislurp
 
-[![pipeline](https://gitlab.com/diamondburned/arikawa/badges/master/pipeline.svg?style=flat-square)][pipeline]
-[![coverage](https://gitlab.com/diamondburned/arikawa/badges/master/coverage.svg?style=flat-square)][pipeline]
+[![pipeline](https://gitlab.com/diamondburned/apislurp/badges/purpleslush/pipeline.svg?style=flat-square)][pipeline]
+[![coverage](https://gitlab.com/diamondburned/apislurp/badges/purpleslush/coverage.svg?style=flat-square)][pipeline]
 [![godoc](https://img.shields.io/badge/godoc-reference-blue)][godoc]
 
-[pipeline]: https://gitlab.com/diamondburned/arikawa/pipelines
+[pipeline]: https://gitlab.com/diamondburned/apislurp/pipelines
 [godoc]: https://beta.pkg.go.dev/github.com/diamondburned/apislurp
 
 A small Discord documentation parser.
