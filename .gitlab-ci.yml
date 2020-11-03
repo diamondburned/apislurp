@@ -21,7 +21,7 @@
         "stage": "test",
         "timeout": "2m",
         "script": [
-            "go test -nodiscordtests  ./..."
+            "go test -tags nodiscordtests ./..."
         ]
     },
     "coverage_test": {
