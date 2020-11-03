@@ -1,1 +1,4 @@
 
+[submodule "internal/tests/discord-api-docs"]
+	path = internal/tests/discord-api-docs
+	url = https://github.com/discord/discord-api-docs.git
