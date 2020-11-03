@@ -1,4 +1,4 @@
-// +build !discordtests
+// +build !nodiscordtests
 
 package apislurp_test
 
